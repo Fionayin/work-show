@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			li{
+				list-style: none;
+			}
+			#div1 {
+				width: 900px;
+				margin: 0px auto;
+			}
+			#div1 ul {
+				margin-top: 10px;
+				width: 900px;
+				height: 550px;
+				padding: 10px;
+				border: 1px dashed #000;
+				overflow: hidden;
+				position: relative;
+			}
+			#div1 ul li {
+				float: left;
+				margin: 10px;
+				width: 200px;
+				height: 150px;
+				overflow: hidden;
+				position: relative;
+				z-index: 1;
+
+			}
+			#div1 ul li {
+				width: 200px;
+				height: 150px;
+			}
+			#div1 ul li.active{
+				border: 2px dashed red;
+			}
+		</style>
+		
+<script>
+	function textPengZhuang(obj1,obj2){
+		var obj1W = obj1.offsetWidth;
+		var obj1H = obj1.offsetHeight;
+		var obj1L = obj1.offsetLeft;
+		var obj1T = obj1.offsetTop;
+		var obj2W = obj2.offsetWidth;
+		var obj2H = obj2.offsetHeight;
+		var obj2L = obj2.offsetLeft;
+		var obj2T = obj2.offsetTop;
+		if( obj1W+obj1L > obj2L && obj1T+obj2H > obj2T && obj1L < obj2L+obj2W && obj1T < obj2T+obj2H ){
+			return true;
+		}else{
+			false;
+		}
+	}
+	window.onload = function(){
+		var list = document.getElementById("oUl");
+		var listLi = list.getElementsByTagName("li");
+		//保存一下每个li的offsetLeft，offsetTop的值
+		list.addEventListener("transitionend",function (ev){
+			ev.target.style.transition = 'none';
+			onOff = false;
+			console.log(onOff)
+		},false);
+		var arrLeftTop = [];
+		for( var i=0; i<listLi.length; i++ ){
+			arrLeftTop.push({
+				left:listLi[i].offsetLeft,
+				top:listLi[i].offsetTop
+			})
+		};
+		//做布局转换
+		for( var j = 0; j<arrLeftTop.length; j++ ){
+			listLi[j].index = j;
+			listLi[j].style.position = 'absolute';
+			listLi[j].style.left = arrLeftTop[j].left+"px";
+			listLi[j].style.top = arrLeftTop[j].top+"px";
+			listLi[j].style.margin = 0;
+		};
+		//做拖拽
+		
+		var zIndex = 1;
+		list.onmousedown= function(ev){
+			var target = ev.target;
+			zIndex++;
+			if( target.nodeName == "LI" || target.nodeName == "IMG" && (target = target.parentNode) ){
+				target.style.zIndex = zIndex;
+				target.style.transition = 'none';
+				var disX = ev.clientX - target.offsetLeft;
+				var disY = ev.clientY- target.offsetTop;
+				var arr=[],max = +Infinity,index = 0,rockObj = null,onOff = null;
+				document.onmousemove = function(ev){
+					max = +Infinity,index = 0;
+					arr.length = 0;
+					if( !onOff ){
+						console.log(1)
+						target.style.left = ev.clientX - disX + "px";
+						target.style.top = ev.clientY - disY + "px";
+						for( var i = 0; i<listLi.length; i++ ){
+							if( listLi[i] !== target ){
+								listLi[i].style.border = 'none';
+								listLi[i].style.margin = 0;
+								if( textPengZhuang(target,listLi[i]) ){
+									arr.push(listLi[i]);
+									//console.log(arr);
+								}
+								
+							}
+						};
+					}
+					
+					//从arr中碰撞到的找到最近的
+					for( var m = 0; m<arr.length;m++ ){
+						var l = (target.offsetLeft+target.offsetWidth/2)-(arr[m].offsetLeft+arr[m].offsetWidth/2);
+						var t = (target.offsetTop+target.offsetHeight/2)-(arr[m].offsetTop+arr[m].offsetHeight/2);
+						var z = l*l+t*t;
+						if( max > z ){
+							max = z; 
+							index = m;
+						}
+					};
+					if( arr[index] ){
+						arr[index].style.border = "2px solid purple";
+						arr[index].style.margin = '-1px';
+					};
+					rockObj = arr[index];
+					if( ev.preventDefault() ){
+						ev.preventDefault()
+					};
+				};
+				document.onmouseup = function(ev){
+					document.onmousemove = document.onmouseup = null;
+					target.style.transition = 'left 1s,top 1s';
+					//碰上了交换位置
+					if( rockObj ){
+						onOff = true;
+						console.log(onOff)
+						rockObj.style.transition = 'left 1s,top 1s';
+						target.style.left = arrLeftTop[rockObj.index].left+"px";
+						target.style.top = arrLeftTop[rockObj.index].top+"px";
+						rockObj.style.left = arrLeftTop[target.index].left+'px';
+						rockObj.style.top = arrLeftTop[target.index].top+'px';
+						rockObj.style.border = '0';
+						//交换之后交换索引值
+						rockObj.index = [target.index,target.index = rockObj.index][0];
+						
+					}else{
+						target.style.left = arrLeftTop[target.index].left+"px";
+						target.style.top = arrLeftTop[target.index].top+"px";
+					};
+					
+					
+				}
+			}
+		}
+	}
+</script>
+	</head>
+
+	<body>
+		
+		<div id="div1">
+			<ul id="oUl">
+				<li>
+					<img src="./image/1.jpg" />
+				</li>
+				<li>
+					<img src="./image/2.jpg" />
+				</li>
+				<li>
+					<img src="./image/3.jpg" />
+				</li>
+				<li>
+					<img src="./image/4.jpg" />
+				</li>
+				<li>
+					<img src="./image/5.jpg" />
+				</li>
+				<li>
+					<img src="./image/1.jpg" />
+				</li>
+				<li>
+					<img src="./image/2.jpg" />
+				</li>
+				<li>
+					<img src="./image/3.jpg" />
+				</li>
+				<li>
+					<img src="./image/4.jpg" />
+				</li>
+				<li>
+					<img src="./image/5.jpg" />
+				</li>
+				<li>
+					<img src="./image/1.jpg" />
+				</li>
+				<li>
+					<img src="./image/2.jpg" />
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

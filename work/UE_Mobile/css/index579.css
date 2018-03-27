@@ -1,0 +1,48 @@
+body,h2,input,form,p,ul{margin: 0; padding: 0; font-family: "微软雅黑";}
+input{border:none;}
+a{text-decoration: none;}
+img{vertical-align: top; border: none;}
+li{list-style: none;}
+body{background-color: #f6f9fa;}
+.top{width:100%; height: 50px; background-color: #323436; position: relative;}
+.nav{display: none; }
+.banner{display: none;}
+.phoneNav{background: url(../img/xnav.gif) no-repeat; position: absolute; left:9px; top:10px; width: 20px; height: 32px; background-size: contain;} 
+.Hlogo{background: url(../img/xlogo.gif) no-repeat; width: 60px; height: 32px;position: absolute; left:40%; top:10px;} 
+.user{background: url(../img/user.gif) no-repeat; width: 17px; height: 18px; position: absolute; right:5px; top:18px;}
+.bg{display: none;}
+.phoneBg{width: 100%; height: 40px; background-color: #fdfefe;}
+.phoneBg>a:nth-of-type(1){width: 30%; height: 40px; line-height: 40px; text-align: center; float: left; font-size: 12px; color: #656565; position: relative;}
+.phoneBg>a:nth-of-type(2){width: 40%; height: 40px; line-height: 40px; text-align: center; float: left; font-size: 12px; color: #656565;  position: relative;}
+.phoneBg>a:nth-of-type(3){width: 30%; height: 40px; line-height: 40px; text-align: center; float: left; font-size: 12px; color: #656565;  position: relative;}
+.phoneBg>a:nth-of-type(1) span{background: url(../img/la.png) no-repeat; width: 9px; height: 5px; position: absolute; left:70%; top:18px;}
+.phoneBg>a:nth-of-type(2) span{background: url(../img/la.png) no-repeat; width: 9px; height: 5px; position: absolute; left:75%; top:18px;}
+.phoneBg>a:nth-of-type(3) span{background: url(../img/la.png) no-repeat; width: 9px; height: 5px; position: absolute; left:70%; top:18px;}
+.list{display: none;}
+.phoneList li{width: 100%; background-color: #fff; margin-top: 6px; margin-left: 6px; position: relative;}
+.phoneList li a img{width: 25%;}
+.right1{width: 75%;position:absolute; left:25%; top:0;height: 100%; }
+.left1 a img{ width: 100%; height: 100%;}
+.right1>a:nth-of-type(1){font-size: 12px;width: 55%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #4e4e4e; position:absolute; left: 2%; top: 8%; }
+.right1>a:nth-of-type(2){background: url(../img/view.gif) no-repeat; width: 18px; height: 12px; position: absolute; left: 2%; top:70%;}
+.autor{font-size: 12px;position: absolute; left: 2%; top:40%; color: #bfbfbf;}
+.number{position: absolute; left:10%;top: 67%; color: #959595; font-size: 12px;}
+.right1>a:nth-of-type(3){font-size: 12px; color: #9f9f9f; position: absolute; right: 5%; top: 70%;}
+.all{display: none;}
+.Baside{display: none;}
+.download{display: none;}
+.css3{display: none;}
+.partner{display: none;}
+.footer{display: none;}
+.nameContent{display: none;}
+
+
+
+
+
+
+
+
+
+
+

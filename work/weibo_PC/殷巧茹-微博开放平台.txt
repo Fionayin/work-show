@@ -1,0 +1,24 @@
+
+网站首页：http://open.weibo.com/
+
+          home-page.html
+
+微连接  ：http://open.weibo.com/development
+
+          weibo-connect.html
+
+微服务  ：http://open.weibo.com/service
+
+          weibo-service.html
+
+文档    ：http://open.weibo.com/wiki/%E9%A6%96%E9%A1%B5
+
+          weibo-API.html
+
+支持    ：http://open.weibo.com/support
+
+          weibo-support.html
+
+推广    ：http://open.weibo.com/fensitong
+       
+          weibo-promotion.html

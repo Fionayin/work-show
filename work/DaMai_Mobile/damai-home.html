@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no" />
+		<title>大麦网</title>
+		<script>
+			(function(){
+				toSize();
+				window.addEventListener('resize',toSize);//屏幕大小改变的时候，重新计算一下 rem的基准值
+				function toSize(){
+					var html = document.documentElement;//获取html
+					var width = html.clientWidth; //获取到html的宽度
+					var nub = 7.5;//把rem的基准值(也就是html的字体大小)，设置成屏幕宽度的多少分之一
+					html.style.fontSize = (width / nub) + "px";//设置html的字体大小 
+				}
+			})();	
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/damai-home.css">
+	</head>
+	<body>
+		<header class="header">
+			<a href="#" class="add">上海</a>
+			<form class="search-box">
+				<span class="search"></span>
+				<input type="text" placeholder="搜索明星 演出 赛事 场馆"/>
+			</form>
+			<a href="#" class="code"></a>
+			<a href="#" class="message"></a>
+		</header>
+		
+		
+		<div class="banner">
+			<input type="radio" name="point" id="point1" checked/>
+			<label for="point1"></label>
+			<input type="radio" name="point" id="point2"/>
+			<label for="point2"></label>
+			<input type="radio" name="point" id="point3"/>
+			<label for="point3"></label>
+			<input type="radio" name="point" id="point4"/>
+			<label for="point4"></label>
+			<input type="radio" name="point" id="point5"/>
+			<label for="point5"></label>
+			<input type="radio" name="point" id="point6"/>
+			<label for="point6"></label>
+			<input type="radio" name="point" id="point7"/>
+			<label for="point7"></label>
+			<input type="radio" name="point" id="point8"/>
+			<label for="point8"></label>
+			<ul class="banner-slider">
+				<li>
+					<a href="#"><img src="img/banner1.png"></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/banner2.png"></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/banner3.png"></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/banner4.png"></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/banner5.png"></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/banner6.png"></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/banner7.png"></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/banner8.png"></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/banner1.png"></a>
+				</li>
+			</ul>
+		</div>
+		
+		
+		<nav class="nav-home">
+			<ul class="nav-list clearFix">
+				<li>
+					<a href="#" class="nav-a">
+						<span class="nav-icon icon1"></span>
+						<strong>演唱会</strong>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="nav-a">
+						<span class="nav-icon icon2"></span>
+						<strong>话剧歌剧</strong>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="nav-a">
+						<span class="nav-icon icon3"></span>
+						<strong>音乐会</strong>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="nav-a">
+						<span class="nav-icon icon4"></span>
+						<strong>体育</strong>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="nav-a">
+						<span class="nav-icon icon5"></span>
+						<strong>曲苑杂坛</strong>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="nav-a">
+						<span class="nav-icon icon6"></span>
+						<strong>亲子</strong>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="nav-a">
+						<span class="nav-icon icon7"></span>
+						<strong>展览休闲</strong>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="nav-a">
+						<span class="nav-icon icon8"></span>
+						<strong>电影</strong>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		
+		
+		<section class="hot">
+			<div>
+				<h2 class="same-title">热门推荐</h2>
+			</div>
+			<a href="#" class="hot-banner">
+				<p class="hot-nav">
+					<span>演唱会</span><span class="last-span">潮人聚集地</span>
+				</p>
+				<p class="hot-content">YOHOOD 2017 全球潮流新品嘉年华</p>
+				<p class="hot-see"><strong class="see">857</strong>人想看</p>
+			</a>
+			<ul class="hot-list clearFix">
+				<li>
+					<a href="#">
+						<img src="img/hot-img1.png">
+						<h3>周笔畅</h3>
+						<p>全新主题开唱</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/hot-img2.png">
+						<h3>简单生活节</h3>
+						<p>在这里不止是音乐</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/hot-img3.png">
+						<h3>太阳马戏</h3>
+						<p>华丽的视觉飨宴</p>
+					</a>
+				</li>
+			</ul>
+		</section>
+	
+		<section class="drama section-same">
+			<div class="same-header">
+				<h2 class="same-title drama-title fl">话剧音乐剧</h2>
+				<a href="#" class="more fr">更多</a>
+			</div>
+			<ul class="drama-list clearFix">
+				<li>
+					<a href="#">
+						<img src="img/drama-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/drama-img2.png">
+						<h3>话剧 [海上夫人]</h3>
+						<p>2017.09.07-09.10</p>
+						<p>不朽之作</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/drama-img3.png">
+						<h3>百老汇音乐剧 [狮子王] 中文版</h3>
+						<p>常年</p>
+						<p>迪士尼出品</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/drama-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/drama-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/drama-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/drama-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/drama-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/drama-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+			</ul>
+		</section>
+		
+		
+		<section class="sports section-same">
+			<div class="same-header">
+				<h2 class="same-title sports-title fl">体育比赛</h2>
+			</div>
+			<ul class="drama-list clearFix">
+				<li>
+					<a href="#">
+						<img src="img/sports-img1.png">
+						<h3>2017 NHL 中国赛 上海站</h3>
+						<p>2017.09.21</p>
+						<p>魅力冰球</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/sports-img2.png">
+						<h3>国际汽联F4中国锦标赛</h3>
+						<p>2017.09.17</p>
+						<p>感受轰鸣</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/sports-img3.png">
+						<h3>UFC 格斗之夜：上海</h3>
+						<p>2017.11.25</p>
+						<p>热血格斗</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/sports-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/sports-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/sports-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/sports-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/sports-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/sports-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+			</ul>
+		</section>
+		
+		
+		<section class="sports section-same">
+			<div class="same-header">
+				<h2 class="same-title music-title fl">音乐会</h2>
+				<a href="#" class="more fr">更多</a>
+			</div>
+			<ul class="drama-list clearFix">
+				<li>
+					<a href="#">
+						<img src="img/music-img1.png">
+						<h3>2017 VIDEO GAMES LIVE [魔兽世界音乐会]</h3>
+						<p>2017.09.21</p>
+						<p>为了部落</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/music-img2.png">
+						<h3>光明 [如实之夜]——袁莎古筝专场演奏会</h3>
+						<p>2017.09.15 19:30</p>
+						<p>筝与诗</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/music-img3.png">
+						<h3>2017唐禹哲生日音乐会</h3>
+						<p>2017.09.02 19:30</p>
+						<p>暖男一枚</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/music-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/music-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/music-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/music-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/music-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/music-img1.png">
+						<h3>音乐剧 [修女也疯狂]</h3>
+						<p>2017.09.07-09.17</p>
+						<p>百老汇经典</p>
+					</a>
+				</li>
+			</ul>
+		</section>
+		
+		
+		<ul class="sub-nav-list clearFix">
+			<li>
+				<a href="#" class="sub-img">
+					<img src="img/sub-nav1.png">
+					<strong>孟京辉戏剧</strong>
+					<span>黑猫剧团登场</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="sub-img">
+					<img src="img/sub-nav2.png">
+					<strong>开心麻花</strong>
+					<span>心花怒Fun</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="sub-img">
+					<img src="img/sub-nav3.png">
+					<strong>盗墓笔记</strong>
+					<span>告别版盗墓笔记</span>
+				</a>
+			</li>
+		</ul>
+		
+		
+		<section class="children section-same">
+			<div class="same-header">
+				<h2 class="same-title children-title fl">带孩子看演出</h2>
+				<a href="#" class="more fr">更多</a>
+			</div>
+			<ul class="children-list">
+				<li>
+					<a href="#" class="children-left fl">
+						<img src="img/children-img1.png">
+					</a>
+					<a href="#" class="children-right fl">
+						<div class="children-nav">
+							<span>话剧歌剧</span><strong>视觉飨宴</strong>
+						</div>
+						<h3>加拿大太阳马戏 [KOOZA]</h3>
+						<p>2017.10.01-12.03</p>
+						<p>它不只是一部华丽的视觉飨宴！ 更是一堂轻松的哲学课，一场艺术大展……</p>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="children-left fl">
+						<img src="img/children-img2.png">
+					</a>
+					<a href="#" class="children-right fl">
+						<div class="children-nav">
+							<span>亲子秀</span><strong>创意互动</strong>
+						</div>
+						<h3>斯拉法的下雪秀</h3>
+						<p>2017.09.14-09.17</p>
+						<p>揉合了默剧、形体、舞台视效和知名的乐曲，表现出天马行空的创意和令人惊叹不已的舞台效果</p>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="children-left fl">
+						<img src="img/children-img3.png">
+					</a>
+					<a href="#" class="children-right fl">
+						<div class="children-nav">
+							<span>度假休闲</span><strong>亲子共赏</strong>
+						</div>
+						<h3>[对话童年] 冰雕嘉年华</h3>
+						<p>2017.08.20-10.22</p>
+						<p>封印尘启，重温童趣</p>
+					</a>
+				</li>
+			</ul>
+		</section>
+		
+		
+		<section class="weekend children section-same sports">
+			<div class="same-header weekend-header">
+				<h2 class="same-title weekend-title children-title">周末精选</h2>
+				<div class="weekend-nav">
+					<nav class="fl">
+						<a href="#" class="active">本周</a><a href="#">下周</a><a href="#">本月</a>
+					</nav>
+					<div class="fr weekend-more">
+						<a href="#" class="more">演出日历</a>
+					</div>
+				</div>
+			</div>
+			<ul class="children-list weekend-list">
+				<li>
+					<a href="#" class="children-left fl">
+						<img src="img/weekend-img1.png">
+					</a>
+					<a href="#" class="children-right fl">
+						<div class="children-nav">
+							<span>演唱会</span><strong>电音与激情</strong>
+						</div>
+						<h3>Firebeatz At Fusion</h3>
+						<p>2017.09.01 22.30</p>
+						<p>Firebeatz的现场，总有你会放声合唱的哪一首！</p>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="children-left fl">
+						<img src="img/weekend-img2.png">
+					</a>
+					<a href="#" class="children-right fl">
+						<div class="children-nav">
+							<span>演唱会</span><strong>电音盛会</strong>
+						</div>
+						<h3>【MAO Live呈现】 Zebbler Encanti Experience</h3>
+						<p>2017.10.01-12.03</p>
+						<p>高能精神病贝司音药让你们原本就不正常的精神疾病变本加厉。Get Psychic, patients!</p>
+					</a>
+				</li>
+			</ul>
+		</section>
+		
+		
+		<section class="interested children section-same sports">
+			<div class="same-header">
+				<h2 class="interested-title same-title children-title fl">猜你喜欢</h2>
+			</div>
+			<ul class="children-list">
+				<li>
+					<a href="#" class="children-left fl">
+						<img src="img/interested-img1.png">
+					</a>
+					<a href="#" class="children-right fl">
+						<div class="children-nav interested-nav">
+							<span>演唱会</span>
+						</div>
+						<h3>2017 Fan Fan 范玮琪 [在幸福的路上] 世界巡回演唱会 上海站</h3>
+						<p>2017-09.02 19:30:00</p>
+						<p>范玮琪的多个“首次”汇聚在上海这场演唱会上，重要性可想而知。</p>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="children-left fl">
+						<img src="img/interested-img2.png">
+					</a>
+					<a href="#" class="children-right fl">
+						<div class="children-nav interested-nav">
+							<span>演唱会</span>
+						</div>
+						<h3>上海简单生活节“2017限定版”</h3>
+						<p>2017-10-04 11:00:00</p>
+						<p>在这里，不止是音乐，更有来自华人地区的上百家创意品牌，带给你不同的生活美学概念和新的生活方式认知。</p>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="children-left fl">
+						<img src="img/interested-img3.png">
+					</a>
+					<a href="#" class="children-right fl">
+						<div class="children-nav interested-nav">
+							<span>亲子</span>
+						</div>
+						<h3>冰上迪士尼·魔幻时空2017世界巡演上海站</h3>
+						<p>2017-12-01 19:30:00</p>
+						<p>50位迪士尼童话明星炫丽登场，华美舞姿令人大饱眼福；14个经典故事引领全新剧情</p>
+					</a>
+				</li>
+			</ul>
+		</section>
+		
+		
+		<footer class="footer">
+			<ul class="footer-list">
+				<li class="active">
+					<a href="#" class="footer-a">
+						<span class="footer-icon footer-icon1"></span>
+						<strong>首页</strong>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="footer-a">
+						<span class="footer-icon footer-icon2"></span>
+						<strong>分类</strong>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="footer-a">
+						<span class="footer-icon footer-icon3"></span>
+						<strong>发现</strong>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="footer-a">
+						<span class="footer-icon footer-icon4"></span>
+						<strong>我的</strong>
+					</a>
+				</li>
+			</ul>
+		</footer>
+		
+		
+	</body>
+</html>

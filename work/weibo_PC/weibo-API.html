@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>微博API</title>
+		<!--[if IE 8]>
+			<script type="text/javascript" src="js/html5shiv.min.js"></script>
+		<![endif IE 8]-->
+		<link rel="stylesheet" type="text/css" href="css/home-page.css">
+	</head>
+	<body class="body-connect">
+		<header class="header-bg">
+			<div class="header-cont center">
+				<h1 class="logo fl">
+					<a class="logo-img" href="home-page.html" title="进入首页">新浪微博开放平台</a>
+				</h1>
+				<ul class="logo-nav fl">
+					<li class="logo-nav-list">
+						<a href="weibo-connect.html" class="list-bg">微连接<span class="selectIcon"></span></a>
+						<div class="nav-more-list">
+							<div class="more-list"><a href="#">移动应用</a></div>
+							<div class="more-list"><a href="#">网站接入</a></div>
+							<div class="more-list"><a href="#">无线游戏</a></div>
+							<div class="more-list"><a href="#">其他</a></div>
+						</div>
+					</li>
+					<li class="logo-nav-list">
+						<a href="weibo-service.html" class="list-bg">微服务<span class="selectIcon"></span></a>
+						<div class="nav-more-list service-list">
+							<div class="more-list"><a href="#">轻应用</a></div>
+							<div class="more-list"><a href="#">微博支付</a></div>
+							<div class="more-list"><a href="#">商业数据</a></div>
+							<div class="more-list"><a href="#">数据中心</a></div>
+							<div class="more-list"><a href="#">粉丝服务</a></div>
+							<div class="more-list"><a href="#">合作介绍</a></div>
+						</div>
+					</li>
+					<li class="logo-nav-list">
+						<a href="weibo-API.html" class="list-bg active">文档</a>
+					</li>
+					<li class="logo-nav-list">
+						<a href="weibo-support.html" class="list-bg">支持</a>
+					</li>
+					<li class="logo-nav-list">
+						<a href="weibo-promotion.html" class="list-bg">推广</a>
+					</li>
+					<li class="logo-nav-list">
+						<a href="#">我的应用</a>
+					</li>
+				</ul>
+				<div class="logo-login list-bg fr"><a href="#">登录</a></div>
+			</div>
+		</header>
+		
+		
+		<main class="main-connect-bg">
+			<div class="main-connect-img">
+				<div class="main-connect main-API center2">
+					<h2 class="main-h2 API"><a href="#" title="开发文档">开发文档</a></h2>
+					<div class="main-connect-wrap main-API-wrap">
+						<section class="api-section clearFix">
+							
+							<aside class="aside-left fl">
+								<form action="" class="search clearFix">
+									<input type="text" title="在微博API中搜索 [alt-f]" class="search-box fl" value="" >
+									<input type="submit" name="fulltext" value="搜索" title="搜索含这些文字的页面" class="search-btn" >
+								</form>
+								<ul class="aside-list">
+									<li class="aside-li">
+										<h3>
+											<a href="#" class="aside-title">
+												<span class="aside-icon1 aside-icon3"></span>
+												<strong>首页</strong>
+											</a>
+										</h3>
+									</li>
+									<li class="aside-li">
+										<h3>
+											<a href="#">
+												<span class="aside-icon1 aside-icon3"></span>
+												<strong>平台公告</strong>
+											</a>
+										</h3>
+									</li>
+									<li class="aside-li">
+										<h3>
+											<a href="#" class="aside-title">
+												<span class="aside-icon1"></span>
+												<strong>平台概述</strong>
+												<span class="aside-icon2"></span>
+											</a>
+										</h3>
+										<ul class="aside-nav">
+											<li>
+												<a href="#">概述</a>
+											</li>
+											<li>
+												<a href="#">平台公约</a>
+											</li>
+											<li>
+												<a href="#">新手指南</a>
+											</li>
+										</ul>
+									</li>
+									<li class="aside-li">
+										<h3>
+											<a href="#">
+												<span class="aside-icon1"></span>
+												<strong>政策规范</strong>
+												<span class="aside-icon2"></span>
+											</a>
+										</h3>
+										<ul class="aside-nav">
+											<li>
+												<a href="#">开发者协议</a>
+											</li>
+											<li>
+												<a href="#">应用运营管理规范</a>
+											</li>
+											<li>
+												<a href="#">微连接分级管理办法</a>
+											</li>
+											<li>
+												<a href="#">应用审核产品指南</a>
+											</li>
+											<li>
+												<a href="#">应用安全开发注意事项</a>
+											</li>
+											<li>
+												<a href="#">平台应用设计规范</a>
+											</li>
+										</ul>
+									</li>
+									<li class="aside-li">
+										<h3>
+											<a href="#">
+												<span class="aside-icon1"></span>
+												<strong>视频直播</strong>
+												<span class="aside-icon2"></span>
+											</a>
+										</h3>
+										<ul class="aside-nav">
+											<li>
+												<a href="#">视频直播接入指引</a>
+											</li>
+											<li>
+												<a href="#">视频直播开放接口</a>
+											</li>
+										</ul>
+									</li>
+									<li class="aside-li">
+										<h3>
+											<a href="#">
+												<span class="aside-icon1"></span>
+												<strong>头条文章</strong>
+												<span class="aside-icon2"></span>
+											</a>
+										</h3>
+										<ul class="aside-nav">
+											<li>
+												<a href="#">头条文章接入指引</a>
+											</li>
+											<li>
+												<a href="#">头条文章开放接口</a>
+											</li>
+										</ul>
+									</li>
+									<li class="aside-li">
+										<h3>
+											<a href="#">
+												<span class="aside-icon1"></span>
+												<strong>微服务</strong>
+												<span class="aside-icon2"></span>
+											</a>
+										</h3>
+										<ul class="aside-nav">
+											<li>
+												<a href="#">微服务接入指南</a>
+											</li>
+										</ul>
+									</li>
+									<li class="aside-li">
+										<h3>
+											<a href="#">
+												<span class="aside-icon1"></span>
+												<strong>轻应用</strong>
+												<span class="aside-icon2"></span>
+											</a>
+										</h3>
+										<ul class="aside-nav">
+											<li>
+												<a href="#">轻应用接入指南</a>
+											</li>
+											<li>
+												<a href="#">轻应用开发指南</a>
+											</li>
+											<li>
+												<a href="#">轻应用H5新版JS</a>
+											</li>
+											<li>
+												<a href="#">轻应用审核规范</a>
+											</li>
+											<li>
+												<a href="#">轻应用更新日志&amp;常见问题</a>
+											</li>
+										</ul>
+									</li>
+									<li class="aside-li">
+										<h3>
+											<a href="#">
+												<span class="aside-icon1"></span>
+												<strong>商业接口</strong>
+												<span class="aside-icon2"></span>
+											</a>
+										</h3>
+										<ul class="aside-nav">
+											<li>
+												<a href="#">商业数据接入指南</a>
+											</li>
+											<li>
+												<a href="#">订阅服务手册(中文版)</a>
+											</li>
+											<li>
+												<a href="#">订阅服务手册(英文版)</a>
+											</li>
+											<li>
+												<a href="#">商业接口-REST API</a>
+											</li>
+											<li>
+												<a href="#">商业数据常见问题</a>
+											</li>
+										</ul>
+									</li>
+									<li class="aside-li">
+										<h3>
+											<a href="#">
+												<span class="aside-icon1"></span>
+												<strong>微博支付</strong>
+												<span class="aside-icon2"></span>
+											</a>
+										</h3>
+										<ul class="aside-nav">
+											<li>
+												<a href="#">微博支付接入指南</a>
+											</li>
+											<li>
+												<a href="#">微博支付应用接入指南</a>
+											</li>
+											<li>
+												<a href="#">微博支付审核流程</a>
+											</li>
+										</ul>
+									</li>
+									<li class="aside-li">
+										<h3>
+											<a href="#">
+												<span class="aside-icon1"></span>
+												<strong>粉丝服务平台</strong>
+												<span class="aside-icon2"></span>
+											</a>
+										</h3>
+										<ul class="aside-nav">
+											<li>
+												<a href="#">粉丝服务平台</a>
+											</li>
+											<li>
+												<a href="#">新手接入指南</a>
+											</li>
+											<li>
+												<a href="#">微信开发者迁移指南</a>
+											</li>
+											<li>
+												<a href="#">接收消息</a>
+											</li>
+											<li>
+												<a href="#">发送消息</a>
+											</li>
+											<li>
+												<a href="#">自定义菜单</a>
+											</li>
+											<li>
+												<a href="#">用户管理</a>
+											</li>
+											<li>
+												<a href="#">生成带参数的二维码</a>
+											</li>
+											<li>
+												<a href="#">Fans Service Platform</a>
+											</li>
+										</ul>
+									</li>
+									<li class="aside-li">
+										<h3>
+											<a href="#">
+												<span class="aside-icon1"></span>
+												<strong>微博登录</strong>
+												<span class="aside-icon2"></span>
+											</a>
+										</h3>
+										<ul class="aside-nav">
+											<li>
+												<a href="#">授权机制</a>
+											</li>
+										</ul>
+									</li>
+									<li class="aside-li">
+										<h3>
+											<a href="#">
+												<span class="aside-icon1"></span>
+												<strong>移动应用</strong>
+												<span class="aside-icon2"></span>
+											</a>
+										</h3>
+										<ul class="aside-nav">
+											<li>
+												<a href="#">移动应用介绍</a>
+											</li>
+											<li>
+												<a href="#">移动应用SSO授权</a>
+											</li>
+										</ul>
+									</li>
+									<li class="aside-li">
+										<h3>
+											<a href="#">
+												<span class="aside-icon1"></span>
+												<strong>网站接入</strong>
+												<span class="aside-icon2"></span>
+											</a>
+										</h3>
+										<ul class="aside-nav">
+											<li>
+												<a href="#">网站接入介绍</a>
+											</li>
+											<li>
+												<a href="#">Weibo Meta Tags</a>
+											</li>
+											<li>
+												<a href="#">常见问题</a>
+											</li>
+										</ul>
+									</li>
+									<li class="aside-li">
+										<h3>
+											<a href="#">
+												<span class="aside-icon1"></span>
+												<strong>微博API</strong>
+												<span class="aside-icon2"></span>
+											</a>
+										</h3>
+										<ul class="aside-nav">
+											<li>
+												<a href="#">微博API</a>
+											</li>
+											<li>
+												<a href="#">API更新日志</a>
+											</li>
+											<li>
+												<a href="#">接口访问频次权限</a>
+											</li>
+											<li>
+												<a href="#">新版接口迁移指南</a>
+											</li>
+										</ul>
+									</li>
+									<li class="aside-li">
+										<h3>
+											<a href="#">
+												<span class="aside-icon1 aside-icon4"></span>
+												<strong>资源下载</strong>
+												<span class="aside-icon2"></span>
+											</a>
+										</h3>
+										<ul class="aside-nav">
+											<li>
+												<a href="#">微博标识下载</a>
+											</li>
+											<li>
+												<a href="#">SDK</a>
+											</li>
+										</ul>
+									</li>
+									<li class="aside-li">
+										<h3>
+											<a href="#" class="aside-title">
+												<span class="aside-icon1 aside-icon3"></span>
+												<strong>联系我们</strong>
+											</a>
+										</h3>
+									</li>
+									<li class="aside-li">
+										<h3>
+											<a href="#">
+												<span class="aside-icon1"></span>
+												<strong>常见问题</strong>
+											</a>
+										</h3>
+									</li>
+								</ul>
+							</aside>
+							
+							<div class="API-right fl">
+								<div class="language">
+									<span>Language:</span><a href="#" class="active2 Chinese">中文</a><a href="#" class="English">English</a>
+								</div>
+								<div class="API-right-line">
+									<ul class="API-section1">
+										<li>
+											<div class="API-ico web-ico"></div>
+											<div class="API-sect1-content">
+												<h3><a href="#" title="网站接入">网站接入</a></h3>
+												<p class="API-sect1-intro">微连接（Weibo Connect）是微博针对第三方网站提供的社会化网络接入方案。微连接基于微博亿级用户基数和社交网络传播特性，为第三方网站提供用户身份系统及社交关系导入。</p>
+											</div>
+										</li>
+										<li>
+											<div class="API-ico onsite-ico"></div>
+											<div class="API-sect1-content">
+												<h3><a href="#" title="站内应用">站内应用</a></h3>
+												<p class="API-sect1-intro">站内应用能使你的Web类应用最快的融入微博，提升用户体验，你的应用将以http://apps.weibo.com/个性域名 的地址被用户访问到，并可深度整合微博众多推广资源及传播渠道帮助你构建高度社交特性的应用。</p>
+											</div>
+										</li>
+										<li>
+											<div class="API-ico move-ico"></div>
+											<div class="API-sect1-content">
+												<h3><a href="#" title="移动应用">移动应用</a></h3>
+												<p class="API-sect1-intro">移动应用开放平台为第三方提供了简便的合作模式，满足了手机用户和平板电脑用户随时随地分享信息的需求。移动应用开放平台提供相关接口，以实现第三方WAP站和客户端等多种应用的接入。</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<ul class="API-section2 clearFix">
+									<li>
+										<h4>
+											<span class="API-small-ico newbie-ico fl"></span>
+											<a href="#" class="API-small-title fl" title="新手指南">新手引导</a>
+										</h4>
+										<p>在您接入网站和开发应用之前，需要了解如何成为平台的开发者，以及之后如何创建应用、提交审核、最终让微博用户在微博应用广场上找到您发布的应用。</p>
+									</li>
+									<li>
+										<h4>
+											<span class="API-small-ico OAuth-ico fl"></span>
+											<a href="#" class="API-small-title fl" title="授权机制说明">OAuth2.0授权认证</a>
+										</h4>
+										<p>大部分API的访问如发表微博、获取私信，关注都需要用户身份。目前微博开放平台用户身份鉴权使用OAuth2.0协议，同时提供对Web，桌面和移动应用程序的支持。</p>
+									</li>
+									<li>
+										<h4>
+											<span class="API-small-ico APIdoc-ico fl"></span>
+											<a href="#" class="API-small-title fl" title="微博API">API文档</a>
+										</h4>
+										<p>API说明文档：包括微博相关API，公共服务API，地理信息API。针对API您还可以在文档调用页进行评分和反馈，便于我们更好地为您提供接口支持。<a href="#" class="API-section2-link">接口测试工具</a></p>
+									</li>
+									<li>
+										<h4>
+											<span class="API-small-ico SDK-ico fl"></span>
+											<a href="#" class="API-small-title fl" title="SDK">SDK下载</a>
+										</h4>
+										<p>开发工具包：包括 Java ， PHP， Flash， iOS， WP7， Android及 Python等语言。以实现第三方WAP站和客户端等多种应用的接入。</p>
+									</li>
+									<li>
+										<h4>
+											<span class="API-small-ico JS-ico fl"></span>
+											<a href="#" class="API-small-title fl" title="Weibo-JS V2">Weibo-JS</a>
+										</h4>
+										<p>Weibo-JS是一个基于Javascript的SDK，只要引用一个JS文件即可使用封装好的方法请求OpenAPI，也可轻松部署微博组件到网页中，有效降低开发成本。</p>
+									</li>
+									<li>
+										<h4>
+											<span class="API-small-ico question-ico fl"></span>
+											<a href="#" class="API-small-title fl" title="应用相关问题">常见问题</a>
+										</h4>
+										<p>应用相关问题包括：应用管理、审核、高级接口及特殊权限、应用调优；接口策略等接口问题以及其他问题。您可在这里进行查看解决。</p>
+									</li>
+								</ul>
+							</div>
+								
+						</section>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+		
+		
+		
+		<footer class="footer center connect-bg">
+			<p class="line"></p>
+			<p class="footer-nav clearFix">
+				<a href="#">关于微博开放平台</a>
+				<a href="#">联系我们</a>
+				<a href="#">服务条款</a>
+				<a href="#">开发者基金</a>
+				<a href="#">微游戏</a>
+				<a href="#" class="footer-border">平台博客</a>
+			</p>
+			<p class="web-Copyright">
+				<span>京网文 [2011] 0398-130号</span>
+				<span>京ICP证100780号</span>
+				<span>Copyright © 1996-2017 SINA</span>
+			</p>
+		</footer>
+	</body>
+</html>
